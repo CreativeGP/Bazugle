@@ -1,2 +1,2 @@
-# Bazugle
-A tiny idea note ✍
+# Bazugle ✍
+A tiny idea note.
