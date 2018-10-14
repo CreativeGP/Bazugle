@@ -29,7 +29,7 @@ function once (query, event, func) {
 };
 
 function save() {
-    localStorage.setItem('draft', $('#view').html());
+    localStorage.setItem('bazugle_draft', $('#view').html());
 }
 
 function update () {
@@ -84,13 +84,9 @@ New Item
 }
 
 $(() => {
-    
-    $(document).change(() => {
-        localStorage.setItem('draft', $('#view').html());
-    });
 
-    if (localStorage.getItem('draft'))
-        $('#view').html(localStorage.getItem('draft'));
+    if (localStorage.getItem('bazugle_draft'))
+        $('#view').html(localStorage.getItem('bazugle_draft'));
 
 
     $('#category-append').click(e => {
@@ -117,7 +113,7 @@ $(() => {
     $('#import').click(() => {
         if (!confirm("I'll eat the code written in a textbox next of me. This may destroy your precious data. Are you sure?")) return;
 
-        localStorage.setItem('draft', $('#import-value').val());
+        localStorage.setItem('bazugle_draft', $('#import-value').val());
         $('#view').html($('#import-value').val());
 
         alert("Successfully imported.");
