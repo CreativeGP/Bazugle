@@ -94,7 +94,7 @@ $(() => {
             <div class="list">
                 <h2 class="list-title unselectable" contenteditable="false">New Category</h2>
                 <span class="category-delete">✕</span>
-                    
+
                 <div class="item item-append">
                     <span>APPEND NEW ITEM</span>
                 </div>
@@ -119,11 +119,8 @@ $(() => {
         alert("Successfully imported.");
     });
 
-
-
     update();
 
-        
     $(document).mousemove(e => {
         if (!drag_list) return;
         if (drag_list.data('drag') && drag_list.attr('contenteditable') == "false") {
